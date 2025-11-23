@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class Main {
 
-    HashMap<String, Pokemon> System = new HashMap<>();
+    HashMap<String, Pokemon> PC = new HashMap<>();
     String[] Kanto = new String[151];
     String[] Johto = new String[99];
     String[] Hoenn = new String[134];
@@ -12,6 +12,6 @@ public class Main {
     public static void main(String[] args){
 
         Pokemon newMon = new Pokemon("Arcanine", 'M', 100, "Fire");
-
+        System.out.println(newMon);
     }
 }
