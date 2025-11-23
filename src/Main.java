@@ -12,6 +12,6 @@ public class Main {
     public static void main(String[] args){
 
         Pokemon newMon = new Pokemon("Arcanine", 'M', 100, "Fire");
-        System.out.println(newMon);
+
     }
 }
