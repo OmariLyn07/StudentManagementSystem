@@ -1,12 +1,10 @@
 
-
 public class Pokemon {
     String name;
     char gender;
     int level;
     String type;
     String[] moveList = {"-", "-", "-", "-"};
-    String nickname;
 
     public Pokemon(String name, char gender, int level, String type){
         this.name = name;
@@ -28,12 +26,9 @@ public class Pokemon {
             System.out.println(s);
         }
     }
-    public void setNickname(String name){
-        this.nickname = name;
-    }
 
-    public void printStats(){
-        System.out.printf("%s %c%n%s%nLevel:%d%n%s, %s, %s, %s%n", this.name, this.gender, this.type, this.level, this.moveList[0],
+    public String printStats(){
+        return String.format("%s %c%n%s%nLevel:%d%n%s, %s, %s, %s%n", this.name, this.gender, this.type, this.level, this.moveList[0],
                 this.moveList[1],this.moveList[2],this.moveList[3]);
     }
 

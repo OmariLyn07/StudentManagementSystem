@@ -27,11 +27,14 @@ public class PC {
         return pc.get(type).get(i);
     }
 
-    public void printPC(){
+    public String printPC(){
+        StringBuilder s = new StringBuilder();
         for(String k : pc.keySet()){
             for(Pokemon p : pc.get(k)){
-                p.printStats();
+                s.append(p.printStats());
+                s.append("\n");
             }
         }
+        return s.toString();
     }
 }
