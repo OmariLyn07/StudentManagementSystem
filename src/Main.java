@@ -23,9 +23,9 @@ public class Main {
             nav.addMon(newMon);
             Pokedex[i] = newMon;
         }
-
+        /*
         try {
-            writer = new BufferedWriter(new FileWriter("C:/Users/*/*/Desktop/output.txt"));
+            writer = new BufferedWriter(new FileWriter());
             writer.write(nav.printPC());
             writer.newLine();
             writer.close();
@@ -33,7 +33,7 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-
+        */
 
     }
 
